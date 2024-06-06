@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>Tabuada do numero: <input id="perg" type="text"></p>
+    <!--input receptor do valor-->
+    <input type="button" value="Exibir" onclick="funcione()">
+    <!--botão-->
+    <p id="result">
+    </p>
+
+    <script>
+        function funcione(){
+            perg=parseInt(document.getElementById("perg").value)
+            cont=1
+            while(cont>0 && cont<11){
+                multip=perg*cont
+                document.getElementById("result").innerHTML=(`${cont} * ${perg} = ${multip}`)
+                cont++
+            }
+        }
+        
+    </script>
+</body>
+</html>

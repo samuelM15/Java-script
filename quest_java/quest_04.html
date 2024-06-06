@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Analista</title>
+</head>
+<body>
+    
+    <script>
+        a=parseInt(prompt('digite um número'))
+        b=parseInt(prompt('digite outro número'))
+        c=parseInt(prompt('mais um número'))
+        d=parseInt(prompt('mais um '))
+        e=parseInt(prompt('mais um '))
+        if(a>b && a>c && a>d && a>e){
+            confirm(`seu maior número é ${a}`)
+        }
+        else if(b>a && b>c && b>d && b>e){
+            confirm(`seu maior número é ${b}`)
+        }
+        else if(c>a && c>b && c>d && c>e){
+            confirm(`seu maior número é ${c}`)
+        }
+        else if(d>a && d>b && d>c && d>e){
+            confirm(`seu maior número é ${d}`)
+        }
+        else if(e>a && e>b && e>c && e>d){
+            confirm(`seu maior número é ${e}`)
+        }
+        else{
+            confirm(`todos os números são iguais`)
+        }
+    </script>
+</body>
+</html>

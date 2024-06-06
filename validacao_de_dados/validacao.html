@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <form id="form" action="validado.html" method='post' onsubmit="return validar()">
+
+        <p>Nome: <input id="nome" type="text">
+        <span id="erronome"></span> </p>
+
+        <input type="submit" value="enviar">
+    </form>
+
+    <script>
+        function validar(){
+            if (form.nome.value == ""){
+                document.getElementById('erronome').innerHTML = '* preencha seu nome'
+                document.getElementById('erronome').style.color='red'
+                return false
+            }
+        }
+
+    </script>
+</body>
+</html>
