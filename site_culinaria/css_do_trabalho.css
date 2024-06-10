@@ -8,15 +8,18 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background-image: url(xadrez_laranja2.jpg);
+    background-image: url(imagens/xadrez_laranja2.jpg);
 }
 
-nav{
+#barra_de_tarefas{
     width: 100%;
     height: 100px;
     background-color:#008000;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    top: -1px;
 }
 
 #logo{
@@ -69,7 +72,7 @@ a{ color: #DCDCDC; text-decoration: none;}
 #box-primary{
     
     width: 90vw;
-    margin-top: 40px;
+    margin-top: 130px;
     padding: 20px 20px;
     position: relative;
     left: 3vw;
@@ -189,7 +192,7 @@ a{ color: #DCDCDC; text-decoration: none;}
 #container #next{
     position: absolute;
     transform: translateY(-50%);
-    top: 33%;
+    top: 12%;
     background-color: #008000;
     width: 50px;
     height: 50px;
@@ -217,19 +220,74 @@ a{ color: #DCDCDC; text-decoration: none;}
 }
 
 /*=====outros=====*/
-#box-primary #caixaoutros{
+#box-primary .caixaoutros{
+    width: 100%;
+    
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
 }
 
-#box-primary #caixaoutros{
+#box-primary .caixaoutros{
     display: flex;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 
-#outros{
+.outros{
     background-color: #008000;
-    width: 280px;
+    min-width: 290px;
+    height: 275px;
+}
+
+.outros:not(:first-child){
+    margin-left: 40px;
+}
+
+.cabecalho_outros{
+    width: 100%;
+    margin-top: 120px;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho_outros h1{
+    background-color: #F0E68C;
+    text-align: center;
+    width: 300px;
+    padding-top: 15px;
+    border-top-right-radius: 20px;
+}
+
+.cabecalho_outros p{
+    background-color: #F0E68C;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 20px;
+}
+
+.caixaoutros .outros .img_outros{
+    width: 290px;
     height: 250px;
-    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.caixaoutros .outros .text_outros{
+    background-color: #F0E68C;
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 27px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.caixaoutros .outros{
+    border-radius: 20px;
+    border: 5px #008000 solid;
 }
