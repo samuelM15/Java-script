@@ -234,6 +234,16 @@ a{ color: #DCDCDC; text-decoration: none;}
     overflow-x: scroll;
 }
 
+.caixaoutros::-webkit-scrollbar{
+    width: 10px;
+}
+
+.caixaoutros::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #008000;
+    border-radius: 20px;
+}
+
 .outros{
     background-color: #008000;
     min-width: 290px;
