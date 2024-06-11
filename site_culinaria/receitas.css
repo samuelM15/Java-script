@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(imagens/xadrez_laranja2.jpg);
+}
+
+.menu{
+    background-color: antiquewhite;
+    width: 65vw;
+}
+
+.menu #inicio{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+}
+
+.menu #inicio img{
+    width: 11vw;
+    height: 20vh;
+    border: 4px #008000 solid ;
+    border-radius: 20px;
+    margin-left: 4vw;
+}
+
+.menu #inicio h1{
+    color: #008000;
+    margin-left: 5vw;
+    font-size: 35px;
+    font-family: Arial;
+}
+
+.menu #caixa{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu #caixa .coluna{
+    background-color: antiquewhite;
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu #caixa .coluna ul{
+    list-style-type: none;
+    font-size: 19px;
+}
+
+.menu #caixa .coluna iframe{
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 4px #008000 solid;
+}
+.menu #caixa .coluna h2{
+    font-size: 35px;
+    color: #008000;
+    font-family: Arial;
+}
+.menu #caixa .coluna p{
+    font-size: 19px;
+}
