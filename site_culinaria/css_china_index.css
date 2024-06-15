@@ -150,12 +150,32 @@ body{
     position: absolute;
 }
 
+/*------slide animation-------*/
+#container{
+    overflow: hidden;
+}
 #container .recomend{
-    display: none;
-} 
+    width: 100%;
+    list-style-type: none;
+}
 
-#container .recomend.active{
-    display: block;
+#container #slide_ul{
+    display: flex;
+    width: 300%;
+    animation: slider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider{
+    25% {margin-left:#}
+    45% {margin-left:0;}
+
+    50% {margin-left:-100% ;}
+    70% {margin-left:-100%;}
+
+    75% {margin-left:-200%;}
+    100% {margin-left:-200%;}
 }
 
 /*coloração das outras recomendações*/
@@ -188,38 +208,6 @@ body{
     margin-left: 45.2%;
     z-index: 1;
     position: absolute;
-}
-/*-------Botão para passar as recomendações--------*/
-
-#container #prev,
-#container #next{
-    position: absolute;
-    transform: translateY(-20%);
-    top: 15.25%;
-    background-color: #008000;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 40px;
-    font-weight: bolder;
-    border-radius: 40px;
-    cursor: pointer;
-    color: white;
-}
-
-#container #prev:hover,
-#container #next:hover{
-    margin-top: 2px;
-   background-color: #08aa08;
-}
-
-#container #prev{
-    left: 20px;
-}
-
-#container #next{
-    right: 20px;
 }
 
 /*=====outros=====*/
