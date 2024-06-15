@@ -9,28 +9,56 @@
 </head>
 <body>
     <div class="divpai">
-        <form action="">
+        <form name='form' action="login_site.html" method="post" onsubmit="return validar()">
             <h1>Cadastro</h1>
             <div class="caixa">
-                <input type="text" placeholder="Seu nome" required>
+                <input name='nome' type="text" placeholder="Seu nome" >
+                <span id="nome_span"></span>
             </div>
-
+                
             <div class="caixa">
-                <input type="password" placeholder="Sua senha" required>
+                <input name='senha' type="password" placeholder="Sua senha">
+                <span id="senha_span"></span>
             </div>
-
-            <div class="caixa">
-                <input type="password" placeholder="Confirmar Senha" required>
-            </div>
-
-            <div id="requerimentos">
-                <label><input type="checkbox" required > Concorda com os </label><a href="#">termos de uso ?</a>
                
+            <div class="caixa">
+                <input name='rep_senha' type="password" placeholder="Confirmar Senha">
+                <span id="rep_senha_span"></span>
+            </div>
+                
+            <div id="requerimentos">
+                <label><input name='termos' type="checkbox" > Concorda com os </label><a href="#">termos de uso ?</a> 
+                <br>
+                <span id="termo_span"></span>
             </div>
             <button type="submit" id="botao">Cadastre-se</button>
             
         </form>
     </div>
     
+    <script>
+        function validar(){
+            if(form.nome.value ==''){
+                document.getElementById('nome_span').innerHTML='*Digite seu nome'
+                document.getElementById('nome_span').style.color='red'
+                return false
+            }
+            if(form.senha.value==''){
+                document.getElementById('senha_span').innerHTML='*Digite a sua senha'
+                document.getElementById('senha_span').style.color='red'
+                return false
+            }
+            if(form.rep_senha.value!=form.senha.value){
+                document.getElementById('rep_senha_span').innerHTML='*Senha incorreta <br>'
+                document.getElementById('rep_senha_span').style.color='red'
+                return false
+            }
+            if(form.termos.checked==false){
+                    document.getElementById('termo_span').innerHTML='*assine os termos de uso'
+                    document.getElementById('termo_span').style.color='red'
+                    return false
+            }
+        }
+    </script>
 </body>
 </html>

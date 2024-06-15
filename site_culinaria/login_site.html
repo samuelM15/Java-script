@@ -10,15 +10,19 @@
 </head>
 <body>
     <div class="divpai">
-        <form action="">
+        <form name="form" action="Italia_index.html" method="post" onsubmit="return validar()">
             <h1>Login</h1>
             <div class="caixa">
-                <input type="text" placeholder="Usuário" required>
+                <input name="nome" type="text" placeholder="Usuário">
+                <span id="name_span"></span>
             </div>
-
+            
+            
             <div class="caixa">
-                <input type="password" placeholder="Senha" required>
+                <input name="senha" type="password" placeholder="Senha">
+                <span id="senha_span"></span>
             </div>
+            
             <div id="requerimentos">
                 <label><input type="checkbox"> Lembrar</label>
                 <a href="#"> Esqueceu a senha?</a>
@@ -29,6 +33,22 @@
             </div>
         </form>
     </div>
+    <script>
+        function validar(){
+            if (form.nome.value == ''){
+                document.getElementById('name_span').innerHTML='   *Digite seu nome'
+                document.getElementById('name_span').style.color='red'
+                return false
+            }
+            if(form.senha.value==''){
+                document.getElementById('senha_span').innerHTML='*Digite ses senha <br>'    
+                document.getElementById('senha_span').style.color='red'
+                return false
+            }
+            
+        }
+        
+    </script>
     
 </body>
 </html>
