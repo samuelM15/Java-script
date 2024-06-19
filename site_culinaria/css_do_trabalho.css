@@ -149,8 +149,15 @@ body{
     z-index: 1;
     position: absolute;
 }
+#container .recomend{
+    display: none;
+}
 
-/*------slide animation-------*/
+#container .recomend.active{
+    display: block;
+}
+
+/*------slide animation-------
 #container{
     overflow: hidden;
 }
@@ -180,9 +187,10 @@ body{
 
 #container .recomend.active{
     display: block;
-}
+}*/
 
 /*coloração das outras recomendações*/
+
 #container #P2{
     background-color: #4169E1;
     color: white;
@@ -220,7 +228,7 @@ body{
 #container #next{
     position: absolute;
     transform: translateY(-20%);
-    top: 15.25%;
+    top: 11%;
     background-color: #008000;
     width: 50px;
     height: 50px;
@@ -331,3 +339,25 @@ body{
     border-radius: 20px;
     border: 5px #008000 solid;
 }
+
+#rodape{
+    background-color: #008000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#rodape img{
+    height: 45px;
+}
+
+#itens_rodape{
+    width: 300px;
+    padding: 20px;
+    color: white;
+    font-family: Arial;
+}
+

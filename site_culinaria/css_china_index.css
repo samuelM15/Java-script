@@ -1,4 +1,4 @@
-
+/*=====barra de tarefas=====*/
 *{
     margin: 0;
     padding: 0;
@@ -149,8 +149,15 @@ body{
     z-index: 1;
     position: absolute;
 }
+#container .recomend{
+    display: none;
+}
 
-/*------slide animation-------*/
+#container .recomend.active{
+    display: block;
+}
+
+/*------slide animation-------
 #container{
     overflow: hidden;
 }
@@ -178,7 +185,12 @@ body{
     100% {margin-left:-200%;}
 }
 
+#container .recomend.active{
+    display: block;
+}*/
+
 /*coloração das outras recomendações*/
+
 #container #P2{
     background-color: #4169E1;
     color: white;
@@ -209,6 +221,40 @@ body{
     z-index: 1;
     position: absolute;
 }
+
+/*-------Botão para passar as recomendações--------*/
+
+#container #prev,
+#container #next{
+    position: absolute;
+    transform: translateY(-20%);
+    top: 14.8%;
+    background-color: #008000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    border-radius: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+#container #prev:hover,
+#container #next:hover{
+    margin-top: 2px;
+   background-color: #08aa08;
+}
+
+#container #prev{
+    left: 20px;
+}
+
+#container #next{
+    right: 20px;
+}
+
 
 /*=====outros=====*/
 #box-primary .caixaoutros{
@@ -292,4 +338,25 @@ body{
 .caixaoutros .outros{
     border-radius: 20px;
     border: 5px #008000 solid;
+}
+
+#rodape{
+    background-color: #008000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#rodape img{
+    height: 45px;
+}
+
+#itens_rodape{
+    width: 300px;
+    padding: 20px;
+    color: white;
+    font-family: Arial;
 }

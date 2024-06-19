@@ -25,10 +25,8 @@
 
     <main id="box-primary">
         <section id="container">
-            <ul id="slide_ul">
 
-                <li class="recomend active">
-                    <nav>
+                    <nav class="recomend active">
                         <div class="caixa-text">
                             <h1><strong>Frango Xadrez</strong></h1>
                             <p>Uma receita feita de frango em cubos da culinária chinesa de dar água na boca! </p>
@@ -39,10 +37,8 @@
                             <img class="img-box" src="imagens_site/frango-xadrez-receita.jpg" alt="">
                         </div>
                     </nav>
-                </li>
-                    
-                <li class="recomend">
-                    <nav>
+                
+                    <nav class="recomend">
                         <div class="caixa-text" id="P2">
                             <h1><strong>Tartufo</strong></h1>
                             <p>Sobremesa italiana feita de sorvete revestida por chocolate em pó. Uma maravilha! </p>
@@ -53,10 +49,7 @@
                             <img class="img-box" src="imagens_site/tartufo.jpg" alt="">
                         </div>
                     </nav>
-                </li>
-                
-                <li class="recomend">
-                    <nav>
+                    <nav class="recomend">
                         <div class="caixa-text" id="P3">
                             <h1><strong>Filé Wellington</strong></h1>
                             <p>Prato principal francês se tratando de um filé envolto de uma massa folhada. Um dos grandes desafios da cozinha!</p>
@@ -67,10 +60,9 @@
                             <img class="img-box" src="imagens_site/file_wellington.jpg.webp" alt="">
                         </div>
                     </nav>
-                </li>
-                
 
-            </ul>
+            <div id="prev" onclick="prev()"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M561-240 320-481l241-241 43 43-198 198 198 198-43 43Z"/></svg></div>
+            <div id="next" onclick="next()"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/></svg></div>
         </section>
         
         <!--Antepastos (petiscos ou entradas)-->
@@ -298,6 +290,15 @@
             
         </div>
     </main>
+
+
+    <footer id="rodape">
+        <img src="imagens_site/preser_de_ler-removebg-preview.png" alt="">
+        <div id="itens_rodape">
+            <p><img src="imagens_site/Instagram_icon.png.webp" alt="">ConstruindoSabores@_receitas</p> 
+            <p><img src="imagens_site/facebook.png" alt="">@construindo_sabores</p>
+        </div>
+    </footer>
 
     <script>
         let slides = document.querySelectorAll('.recomend');
